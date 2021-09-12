@@ -1,8 +1,9 @@
-import urllib.request as urlrequest
-from bs4 import BeautifulSoup
 import pymongo
+import urllib.request as urlrequest
 
-client = pymongo.MongoClient('localhost',27017)
+from bs4 import BeautifulSoup
+
+client = pymongo.MongoClient('localhost', 27017)
 film250 = client['film250']
 item_detail = film250['item_detail']
 
